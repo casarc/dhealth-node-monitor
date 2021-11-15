@@ -1,0 +1,6 @@
+# required library
+pip install requests
+pip install jproperties
+
+telegram-send configure
+
