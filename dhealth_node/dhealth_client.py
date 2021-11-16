@@ -5,7 +5,7 @@ import logging
 
 class DhealthNodeClient:
     def __init__(self, node_base_url: str):
-        self._dhealth_node_base_url = "http://occamnauts.kindstakepool.com:3000"
+        self._dhealth_node_base_url = node_base_url
 
 
     # define private method called for making http requests to the DhealthClient api
