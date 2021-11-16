@@ -25,8 +25,8 @@ class TelegramNotification:
 
             post_url = self.telegram_base_url + "/bot" + self.bot_token + "/sendMessage"
 
-            response = None
-            #response = requests.post(post_url, data=query_parameters)
+            #response = None
+            response = requests.post(post_url, data=query_parameters)
             if response.status_code == 200:
                 return response.json()
             else:
