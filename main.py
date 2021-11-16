@@ -35,12 +35,12 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('Starting Node Health Monitor..')
-    """
+
     healthMonitor = DhealthNodeMonitor(prop.configs.get("node_base_url").data,
                                        eval(prop.configs.get("dhealth_node_monitor.send_notification").data))
     healthMonitor.start_monitor(int(prop.configs.get("dhealth_node_monitor.interval").data))
 
-    """
+
 
     mining_monitor = DhealthNodeMiningMonitor(prop.configs.get("node_base_url").data,
                                               prop.configs.get("dhealth_node_mining_monitor.reward_public_key").data,
